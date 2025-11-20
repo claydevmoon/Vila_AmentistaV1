@@ -4,19 +4,19 @@ name: "Vila Amentista V1"
 description: "Base de servidor FiveM - Vila Amentista V1"
 
 tasks:
-  # Baixar os resources do seu repositório
+  # Baixar os resources
   - action: download_github
     src: https://github.com/claydevmoon/Vila_AmentistaV1
     ref: main
     subpath: resources
     dest: ./resources
 
-  # Baixar server.cfg do seu repositório
+  # Baixar server.cfg
   - action: download_file
     url: https://raw.githubusercontent.com/claydevmoon/Vila_AmentistaV1/main/server.cfg
     path: ./server.cfg
 
-  # Baixar database.sql do seu repositório
+  # Baixar database.sql
   - action: download_file
     url: https://raw.githubusercontent.com/claydevmoon/Vila_AmentistaV1/main/database.sql
     path: ./database.sql
