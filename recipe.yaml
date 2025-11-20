@@ -1,18 +1,22 @@
+$engine: 3
+$onesync: on
 name: "Vila Amentista V1"
 description: "Base de servidor FiveM - Vila Amentista V1"
-author: "claydevmoon"
-version: "1.0.0"
 
-source:
-  type: github
-  url: "https://github.com/claydevmoon/Vila_AmentistaV1"
-  branch: "main"
+tasks:
+  # Baixar os resources do seu repositório
+  - action: download_github
+    src: https://github.com/claydevmoon/Vila_AmentistaV1
+    ref: main
+    subpath: resources
+    dest: ./resources
 
-resources:
-  - name: "Vila_AmentistaV1"
-    path: "resources"
+  # Baixar server.cfg do seu repositório
+  - action: download_file
+    url: https://raw.githubusercontent.com/claydevmoon/Vila_AmentistaV1/main/server.cfg
+    path: ./server.cfg
 
-instructions:
-  - "Importe o arquivo database.sql no seu banco de dados."
-  - "Configure o server.cfg conforme necessário."
-  - "A imagem server.png é apenas ilustrativa para o TxAdmin."
+  # Baixar database.sql do seu repositório
+  - action: download_file
+    url: https://raw.githubusercontent.com/claydevmoon/Vila_AmentistaV1/main/database.sql
+    path: ./database.sql
