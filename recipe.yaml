@@ -1,0 +1,18 @@
+name: "Vila Amentista V1"
+description: "Base de servidor FiveM - Vila Amentista V1"
+author: "claydevmoon"
+version: "1.0.0"
+
+source:
+  type: github
+  url: "https://github.com/claydevmoon/Vila_AmentistaV1"
+  branch: "main"
+
+resources:
+  - name: "Vila_AmentistaV1"
+    path: "resources"
+
+instructions:
+  - "Importe o arquivo database.sql no seu banco de dados."
+  - "Configure o server.cfg conforme necessário."
+  - "A imagem server.png é apenas ilustrativa para o TxAdmin."
